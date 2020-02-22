@@ -1,0 +1,212 @@
+
+<resources>
+
+<!-- Base application theme. -->
+
+    //LIGHT GREEN
+    <style name="LightTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/White</item>
+        <item name="colorPrimaryDark">@color/Light_Grey</item>
+        <item name="colorAccent">@color/Green</item>
+
+        <item name="MenuSelectorActiveColor">@color/Green</item>
+        <item name="MenuSelectorInactiveColor">@color/Black</item>
+
+        <item name="backgroundcolor">@color/White</item>
+        <item name="popupBackgroundColor">@color/White</item>
+        <item name="extraShapeBackgroundColor">@color/Very_Light_Grey </item>
+        <item name="extraShapeBackgroundColorTitle">@color/Other_grey </item>
+
+        <item name="AddBookButton">@color/Green</item>
+        <item name="DeleteButton">@color/Light_Red</item>
+        <item name="TitleColor">@color/Green</item>
+        <item name="HintColor">@color/Grey</item>
+        <item name="TextColor">@color/Dark_Grey</item>
+        <item name="editButtonTint">@color/Green</item>
+
+        <item name="starColor">@color/Dark_Yellow</item>
+        <item name="starColorAccent">@color/Orange</item>
+
+        <item name="MenuBackgroundColor">@color/White</item>
+
+        <item name="SelectMultipleBooks">@drawable/delete_books_light</item>
+
+        <item name="actionModeStyle">@style/LStyled.ActionModeDelete</item>
+    </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/Black</item>
+        <item name="colorPrimaryDark">@color/Dark_Grey</item>
+        <item name="colorAccent">@color/Green</item>
+
+        <item name="MenuSelectorActiveColor">@color/Green</item>
+        <item name="MenuSelectorInactiveColor">@color/White</item>
+
+        <item name="backgroundcolor">@color/Black</item>
+        <item name="popupBackgroundColor">@color/Dark_Grey</item>
+        <item name="extraShapeBackgroundColor">@color/Dark_Grey </item>
+        <item name="extraShapeBackgroundColorTitle">@color/Grey </item>
+
+        <item name="AddBookButton">@color/Green</item>
+        <item name="DeleteButton">@color/Light_Red</item>
+        <item name="TitleColor">@color/Green</item>
+        <item name="TextColor">@color/Very_Light_Grey</item>
+        <item name="HintColor">@color/Light_Grey</item>
+        <item name="editButtonTint">@color/Green</item>
+
+        <item name="starColor">@color/Dark_Yellow</item>
+        <item name="starColorAccent">@color/Orange</item>
+
+        <item name="MenuBackgroundColor">@color/Black</item>
+
+        <item name="SelectMultipleBooks">@drawable/delete_books_dark</item>
+
+        <item name="actionModeStyle">@style/LStyled.ActionModeDelete</item>
+
+    </style>
+
+    <style name="ProgressBar" parent="Widget.AppCompat.ProgressBar">
+    </style>
+
+    <style name="LStyled.ActionModeDelete" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="background">@color/Light_Red</item>
+    </style>
+
+
+    //LIGHT GREEN
+    <style name="LightThemeGreen" parent="LightTheme">
+        <item name="colorAccent">@color/Pastel_Green</item>
+
+        <item name="MenuSelectorActiveColor">@color/Pastel_Green</item>
+
+        <item name="AddBookButton">@color/Pastel_Green</item>
+        <item name="TitleColor">@color/Pastel_Green</item>
+        <item name="editButtonTint">@color/Pastel_Green</item>
+    </style>
+
+    //LIGHT BLUE
+    <style name="LightThemeBlue" parent="LightTheme">
+        <item name="colorAccent">@color/Pastel_Blue</item>
+
+        <item name="MenuSelectorActiveColor">@color/Pastel_Blue</item>
+
+        <item name="AddBookButton">@color/Pastel_Blue</item>
+        <item name="TitleColor">@color/Pastel_Blue</item>
+        <item name="editButtonTint">@color/Pastel_Blue</item>
+    </style>
+
+
+    //LIGHT Pink
+    <style name="LightThemePink" parent="LightTheme">
+        <item name="colorAccent">@color/Pastel_Pink</item>
+
+        <item name="MenuSelectorActiveColor">@color/Pastel_Pink</item>
+
+        <item name="AddBookButton">@color/Pastel_Pink</item>
+        <item name="TitleColor">@color/Pastel_Pink</item>
+        <item name="editButtonTint">@color/Pastel_Pink</item>
+    </style>
+
+    //LIGHT Red
+    <style name="LightThemeRed" parent="LightTheme">
+        <item name="colorAccent">@color/Pastel_Red</item>
+
+        <item name="MenuSelectorActiveColor">@color/Pastel_Red</item>
+
+        <item name="AddBookButton">@color/Pastel_Red</item>
+        <item name="TitleColor">@color/Pastel_Red</item>
+        <item name="editButtonTint">@color/Pastel_Red</item>
+    </style>
+
+    //LIGHT Orange
+    <style name="LightThemeOrange" parent="LightTheme">
+        <item name="colorAccent">@color/Pastel_Orange</item>
+
+        <item name="MenuSelectorActiveColor">@color/Pastel_Orange</item>
+
+        <item name="AddBookButton">@color/Pastel_Orange</item>
+        <item name="TitleColor">@color/Pastel_Orange</item>
+        <item name="editButtonTint">@color/Pastel_Orange</item>
+    </style>
+
+    //LIGHT Purple
+    <style name="LightThemePurple" parent="LightTheme">
+        <item name="colorAccent">@color/Pastel_Purple</item>
+
+        <item name="MenuSelectorActiveColor">@color/Pastel_Purple</item>
+
+        <item name="AddBookButton">@color/Pastel_Purple</item>
+        <item name="TitleColor">@color/Pastel_Purple</item>
+        <item name="editButtonTint">@color/Pastel_Purple</item>
+    </style>
+
+
+
+    //DARK GREEN
+    <style name="DarkThemeGreen" parent="DarkTheme">
+        <item name="colorAccent">@color/d_Green</item>
+
+        <item name="MenuSelectorActiveColor">@color/d_Green</item>
+
+        <item name="AddBookButton">@color/d_Green</item>
+        <item name="TitleColor">@color/d_Green</item>
+        <item name="editButtonTint">@color/d_Green</item>
+    </style>
+
+    //DARK BLUE
+    <style name="DarkThemeBlue" parent="DarkTheme">
+        <item name="colorAccent">@color/d_Blue</item>
+
+        <item name="MenuSelectorActiveColor">@color/d_Blue</item>
+
+        <item name="AddBookButton">@color/d_Blue</item>
+        <item name="TitleColor">@color/d_Blue</item>
+        <item name="editButtonTint">@color/d_Blue</item>
+    </style>
+
+
+    //DARK Pink
+    <style name="DarkThemePink" parent="DarkTheme">
+        <item name="colorAccent">@color/d_Pink</item>
+
+        <item name="MenuSelectorActiveColor">@color/d_Pink</item>
+
+        <item name="AddBookButton">@color/d_Pink</item>
+        <item name="TitleColor">@color/d_Pink</item>
+        <item name="editButtonTint">@color/d_Pink</item>
+    </style>
+
+    //DARK Red
+    <style name="DarkThemeRed" parent="DarkTheme">
+        <item name="colorAccent">@color/d_Red</item>
+
+        <item name="MenuSelectorActiveColor">@color/d_Red</item>
+
+        <item name="AddBookButton">@color/d_Red</item>
+        <item name="TitleColor">@color/d_Red</item>
+        <item name="editButtonTint">@color/d_Red</item>
+    </style>
+
+    //DARK Orange
+    <style name="DarkThemeOrange" parent="DarkTheme">
+        <item name="colorAccent">@color/d_Orange</item>
+
+        <item name="MenuSelectorActiveColor">@color/d_Orange</item>
+
+        <item name="AddBookButton">@color/d_Orange</item>
+        <item name="TitleColor">@color/d_Orange</item>
+        <item name="editButtonTint">@color/d_Orange</item>
+    </style>
+
+    //DARK Purple
+    <style name="DarkThemePurple" parent="DarkTheme">
+        <item name="colorAccent">@color/d_Purple</item>
+
+        <item name="MenuSelectorActiveColor">@color/d_Purple</item>
+
+        <item name="AddBookButton">@color/d_Purple</item>
+        <item name="TitleColor">@color/d_Purple</item>
+        <item name="editButtonTint">@color/d_Purple</item>
+    </style>
+
+</resources>

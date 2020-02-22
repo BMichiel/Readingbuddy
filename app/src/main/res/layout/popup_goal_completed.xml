@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="?attr/popupBackgroundColor">
+
+
+    <include layout="@layout/toolbar_popups"
+        android:id="@+id/popupToolbar"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/TextColor"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:id="@+id/AchievedGoalText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="You have achieved your goal!"
+        android:layout_marginBottom="15dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/done_button"
+            android:layout_width="wrap_content"
+            android:minWidth="20dp"
+            android:background="@color/Transparant"
+            android:textColor="?attr/TitleColor"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:text="Done" />
+    </LinearLayout>
+
+</LinearLayout>

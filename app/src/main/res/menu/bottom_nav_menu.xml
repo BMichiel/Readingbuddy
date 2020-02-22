@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/currently_reading_action"
+        android:icon="@drawable/book"
+        android:title="@string/current_timers"
+        />
+
+    <item
+        android:id="@+id/Books_action"
+        android:icon="@drawable/books"
+        android:title="@string/books"
+        />
+
+    <item
+        android:id="@+id/Stats_action"
+        android:icon="@drawable/statistics"
+        android:title="@string/statistics"
+        />
+
+    <item
+        android:id="@+id/Goals_action"
+        android:icon="@drawable/goal"
+        android:title="@string/goal"
+        />
+
+</menu>

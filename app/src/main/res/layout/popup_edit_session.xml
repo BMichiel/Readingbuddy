@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="?attr/popupBackgroundColor">
+
+    <include layout="@layout/toolbar_popups"
+        android:id="@+id/popupToolbar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Amount of pages Read"
+            android:textColor="?attr/TextColor"
+            />
+        <EditText
+            android:id="@+id/pages_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="20dp"
+            android:ems="10"
+            android:hint="0"
+            android:inputType="number"
+            android:textColor="?attr/TextColor"
+            android:textColorHint="?attr/HintColor"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Time read"
+            android:textColor="?attr/TextColor"
+            />
+        <EditText
+            android:id="@+id/time_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="20dp"
+            android:ems="10"
+            android:hint="h00 m59 s59"
+            android:textColor="?attr/TextColor"
+            android:textColorHint="?attr/HintColor"
+            android:gravity="center_horizontal"
+
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:minWidth="20dp"
+            android:background="@color/Transparant"
+            android:textColor="?attr/DeleteButton"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="15dp"
+            android:text="Delete" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:minWidth="20dp"
+            android:background="@color/Transparant"
+            android:textColor="?attr/TitleColor"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/done_button"
+            android:layout_width="wrap_content"
+            android:minWidth="20dp"
+            android:background="@color/Transparant"
+            android:textColor="?attr/TitleColor"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:text="Edit" />
+
+    </LinearLayout>
+</LinearLayout>

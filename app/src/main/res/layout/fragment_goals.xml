@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/goals_layout"
+    android:background="?attr/backgroundcolor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/Goals_Save"
+            android:animateLayoutChanges="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/round_rectangle"
+                android:animateLayoutChanges="true"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yearly Goals"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:textColor="?attr/TitleColor"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pages"
+                        android:textSize="15sp"
+                        android:textColor="?attr/TextColor"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="10dp"/>
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Pages to read"
+                        android:textColorHint="?attr/HintColor"
+                        android:id="@+id/Goal_Year_Pages"
+                        android:textColor="?attr/TextColor"
+                        android:textSize="15sp"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Books"
+                        android:textSize="15sp"
+                        android:textColor="?attr/TextColor"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"/>
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Books to read"
+                        android:textColorHint="?attr/HintColor"
+                        android:id="@+id/Goal_Year_Books"
+                        android:textColor="?attr/TextColor"
+                        android:textSize="15sp"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/round_rectangle"
+                    android:animateLayoutChanges="true"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Monthly Goals"
+                        android:textSize="25sp"
+                        android:gravity="center"
+                        android:textColor="?attr/TitleColor"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pages"
+                            android:textSize="15sp"
+                            android:textColor="?attr/TextColor"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="10dp"/>
+
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Pages to read"
+                            android:textColorHint="?attr/HintColor"
+                            android:id="@+id/Goal_Month_Pages"
+                            android:textColor="?attr/TextColor"
+                            android:textSize="15sp"
+                            android:gravity="right"
+                            android:inputType="number"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="20dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Books"
+                            android:textSize="15sp"
+                            android:textColor="?attr/TextColor"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"/>
+
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Books to read"
+                            android:textColorHint="?attr/HintColor"
+                            android:id="@+id/Goal_Month_Books"
+                            android:textColor="?attr/TextColor"
+                            android:textSize="15sp"
+                            android:gravity="right"
+                            android:inputType="number"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="20dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/round_rectangle"
+                android:animateLayoutChanges="true"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Goal"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:textColor="?attr/TitleColor"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pages"
+                        android:textSize="15sp"
+                        android:textColor="?attr/TextColor"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="10dp"/>
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Pages to read"
+                        android:textColorHint="?attr/HintColor"
+                        android:id="@+id/Goal_Daily_Pages"
+                        android:textColor="?attr/TextColor"
+                        android:textSize="15sp"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/round_rectangle"
+                android:animateLayoutChanges="true"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reminder notification"
+                    android:textColor="?attr/TitleColor"
+                    android:textSize="25sp"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Notification_Time"
+                    android:hint="00:00:00"
+                    android:textColorHint="?attr/HintColor"
+                    android:textColor="?attr/TextColor"
+                    android:textSize="20sp"
+                    android:inputType="time"
+                    android:gravity="center_horizontal"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mon"
+                        android:textColor="?attr/TextColor"
+                        android:id="@+id/Notification_Monday"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tue"
+                        android:textColor="?attr/TextColor"
+                        android:id="@+id/Notification_Tuesday"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wed"
+                        android:textColor="?attr/TextColor"
+                        android:id="@+id/Notification_Wednesday"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thu"
+                        android:textColor="?attr/TextColor"
+                        android:id="@+id/Notification_Thursday"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fri"
+                        android:textColor="?attr/TextColor"
+                        android:id="@+id/Notification_Friday"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sat"
+                        android:textColor="?attr/TextColor"
+                        android:id="@+id/Notification_Saturday"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sun"
+                        android:textColor="?attr/TextColor"
+                        android:id="@+id/Notification_Sunday"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_rectangle"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/Goals_Save"
+                android:text="Save Goals"
+                android:textColor="?attr/TextColor"
+                android:backgroundTint="@color/button_selector_close_up"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

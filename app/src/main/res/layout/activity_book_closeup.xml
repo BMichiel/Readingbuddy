@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/toolbar"
+            android:id="@+id/myToolbar_closeup"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/confettiLeft"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/confettiRight"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/myToolbar_closeup"
+            android:layout_above="@id/buttonLayout"
+            android:animateLayoutChanges="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/round_rectangle"
+                    android:animateLayoutChanges="true"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageButton
+                            android:id="@+id/books_image"
+                            android:layout_width="120dp"
+                            android:layout_height="160dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="?attr/extraShapeBackgroundColor"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/book"
+                            android:tint="?attr/colorAccent"
+                            android:elevation="6dp" />
+
+
+                        <LinearLayout
+                            android:id="@+id/display_layout"
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/books_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxWidth="150dp"
+                                android:text="Title"
+                                android:textColor="?attr/TextColor"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+
+
+                            <TextView
+                                android:id="@+id/books_Author"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxWidth="150dp"
+                                android:text="Author"
+                                android:textColor="?attr/TextColor"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/books_Status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxWidth="150dp"
+                                android:text="To read"
+                                android:textColor="?attr/TextColor"
+                                android:textSize="12sp"
+                                android:textStyle="italic"/>
+
+                            <TextView
+                                android:id="@+id/books_timeRead"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxWidth="150dp"
+                                android:text="00:00:00"
+                                android:textColor="?attr/TextColor"
+                                android:textSize="12sp"
+                                android:textStyle="italic" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <TextView
+                                    android:id="@+id/books_startDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxWidth="150dp"
+                                    android:text="2 jan 1970"
+                                    android:textColor="?attr/TextColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="italic" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxWidth="150dp"
+                                    android:text=" - "
+                                    android:textColor="?attr/TextColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="italic" />
+
+                                <TextView
+                                    android:id="@+id/books_lastReadDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2 jan 1970"
+                                    android:maxWidth="150dp"
+                                    android:textColor="?attr/TextColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="italic" />
+
+                            </LinearLayout>
+
+                            <RatingBar
+                                android:id="@+id/rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxWidth="150dp"
+                                android:numStars="5"
+                                android:stepSize="0.5"
+
+                                android:progressTint="?attr/starColor"
+                                android:secondaryProgress="?attr/starColor"
+                                android:secondaryProgressTint="?attr/starColorAccent"
+                                android:progressBackgroundTint="@color/Light_Grey"
+
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/editLayout"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/edit_books_title"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:hint="Title"
+                                android:textColorHint="?attr/HintColor"
+                                android:textColor="?attr/TextColor"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+
+                                android:maxLines="1"
+                                android:lines="1"
+                                android:singleLine="true"/>
+
+
+                            <EditText
+                                android:id="@+id/edit_books_Author"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:hint="Author"
+                                android:textColorHint="?attr/HintColor"
+                                android:textColor="?attr/TextColor"
+                                android:textSize="12sp"
+
+                                android:maxLines="1"
+                                android:lines="1"
+                                android:singleLine="true" />
+
+
+                            <Spinner
+                                android:id="@+id/edit_books_Status"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp" />
+
+
+                            <EditText
+                                android:id="@+id/edit_books_pages_total"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:hint="Pages total"
+                                android:textColorHint="?attr/HintColor"
+                                android:inputType="number"
+                                android:textColor="?attr/TextColor"
+                                android:textSize="12sp"
+
+                                android:maxLines="1"
+                                android:lines="1"
+                                android:singleLine="true"/>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:scaleType="fitCenter"
+                            android:background="?attr/extraShapeBackgroundColor"
+                            android:id="@+id/Edit_Btn"
+                            android:tint="?attr/editButtonTint"
+                            android:src="@drawable/edit"
+                            />
+
+                    </LinearLayout>
+
+                        <RatingBar
+                            android:id="@+id/edit_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="5"
+                            android:stepSize="0.5"
+                            android:isIndicator="false"
+                            android:visibility="gone"
+
+                            android:progressTint="?attr/starColor"
+                            android:secondaryProgress="?attr/starColor"
+                            android:secondaryProgressTint="?attr/starColorAccent"
+                            android:progressBackgroundTint="@color/Light_Grey"
+
+                            android:layout_gravity="center_horizontal"
+                            />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="At this pace you still need to read for: "
+                        android:textColor="?attr/TextColor"
+                        android:textStyle="italic"
+
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/book_time_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2h 10m 50s"
+                        android:textStyle="italic"
+                        android:textColor="?attr/TitleColor"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <ProgressBar
+                        android:id="@+id/pages_read_progress_bar"
+                        style="?android:progressBarStyleHorizontal"
+                        android:max="1000"
+                        android:progress="0"
+                        android:secondaryProgress="1000"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:progressDrawable="@drawable/loading_circle"
+                        />
+
+                    <TextView
+                        android:id="@+id/pages_read_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/1000"
+                        android:textColor="?attr/TextColor"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/total_ppm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 ppm"
+                        android:textColor="?attr/TextColor"
+                        android:textSize="20sp"
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="center"
+                        />
+
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_rectangle"
+                        android:animateLayoutChanges="true"
+                        android:id="@+id/more_sessions">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/round_rectangle_title"
+                            >
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Last session"
+                                android:textColor="?attr/TitleColor"
+                                android:textStyle="bold"
+                                android:textSize="15sp"/>
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/readingSession_date"
+                                android:text="08-02-2020"
+                                android:textColor="?attr/TitleColor"
+                                android:textStyle="bold"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Pages read"
+                                android:textColor="?attr/TitleColor"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:text="Time read"
+                                android:textColor="?attr/TitleColor"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:text="pages/min"
+                                android:textColor="?attr/TitleColor"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="0"
+                                android:id="@+id/readingSession_pages"
+                                android:textColor="?attr/TextColor"
+                                android:textStyle="bold"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/readingSession_time"
+                                android:text="10:00:00"
+                                android:textColor="?attr/TextColor"
+                                android:textStyle="bold"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/pages_per_minute"
+                                android:text="0"
+                                android:textColor="?attr/TextColor"
+                                android:textStyle="bold"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/buttonLayout"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_rectangle"
+                android:id="@+id/books_start_button"
+                android:text="Start reading"
+                android:textColor="?attr/TextColor"
+                android:backgroundTint="@color/button_selector_close_up"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_rectangle"
+                android:id="@+id/DNF_button"
+                android:text="DNF"
+                android:textColor="?attr/TextColor"
+                android:backgroundTint="@color/button_selector_close_up"/>
+
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_rectangle"
+                android:id="@+id/books_pause_button"
+                android:text="Pause"
+                android:textColor="?attr/TextColor"
+                android:backgroundTint="@color/button_selector_close_up"/>
+
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_rectangle"
+                android:id="@+id/books_cancel_session_button"
+                android:text="Cancel"
+                android:textColor="?attr/TextColor"
+                android:backgroundTint="@color/button_selector_close_up"/>
+
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_rectangle"
+                android:id="@+id/books_stop_button"
+                android:text="Stop"
+                android:textColor="?attr/TextColor"
+                android:backgroundTint="@color/button_selector_close_up"/>
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_rectangle"
+                android:id="@+id/book_finish_button"
+                android:text="Finish"
+                android:textColor="?attr/TextColor"
+                android:backgroundTint="@color/button_selector_close_up"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

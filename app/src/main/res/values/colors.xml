@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ds">
+        <attr name="colorPrimary" format="color"/>
+        <attr name="colorPrimaryDark" format="color"/>
+        <attr name="colorAccent" format="color"/>
+        <attr name="backgroundcolor" format="color"/>
+        <attr name="popupBackgroundColor" format="color"/>
+        <attr name="extraShapeBackgroundColor" format="color"/>
+        <attr name="extraShapeBackgroundColorTitle" format="color"/>
+        <attr name ="AddBookButton" format = "color"/>
+        <attr name ="DeleteButton" format = "color"/>
+        <attr name="TextColor" format="color"/>
+        <attr name="HintColor" format="color"/>
+        <attr name="TitleColor" format="color"/>
+        <attr name="editButtonTint" format="color" />
+        <attr name="MenuBackgroundColor" format="color"/>
+        <attr name="MenuTextColor" format="color"/>
+        <attr name="MenuActiveTextColor" format="color"/>
+        <attr name="ImageBackgroundColor" format="color"/>
+
+        <attr name="starColor" format="color"/>
+        <attr name="starColorAccent" format="color"/>
+
+        <attr name="MenuSelectorActiveColor" format="color"/>
+        <attr name="MenuSelectorInactiveColor" format="color"/>
+
+        <attr name="SelectMultipleBooks" format="reference"/>
+        <attr name="SelectMultipleBooksActive" format="color"/>
+    </declare-styleable>
+
+    <color name="Transparant">#00FFFFFF</color>
+    <color name="Green">#008577</color>
+    <color name="Dark_Green">#00574B</color>
+
+    <color name="Yellow">#FFFF00</color>
+    <color name="Dark_Yellow">#FFDD00</color>
+    <color name="Orange">#FF9900</color>
+
+    <color name="Pastel_Green">#87c887</color>
+    <color name="Pastel_Blue">#b6b4ff</color>
+    <color name="Pastel_Pink">#f0aaab</color>
+    <color name="Pastel_Red">#ffa097</color>
+    <color name="Pastel_Purple">#e6a4ff</color>
+    <color name="Pastel_Orange">#e6a46f</color>
+
+    <color name="d_Green">#87c887</color>
+    <color name="d_Blue">#b6b4ff</color>
+    <color name="d_Pink">#f0aaab</color>
+    <color name="d_Red">#ffa097</color>
+    <color name="d_Purple">#e6a4ff</color>
+    <color name="d_Orange">#e6a46f</color>
+
+    <color name="Pink">#ff34f5</color>
+    <color name="Red">#FF3000</color>
+    <color name="Light_Red">#FF5555</color>
+    <color name="Dark_Red">#AA1111</color>
+
+    <color name="Dark_Blue">#4444BB</color>
+    <color name="Light_Blue">#7777FF</color>
+
+    <color name="Black">#000000</color>
+
+    <color name="White">#FFFFFF</color>
+    <color name="AddBookButton">#008577</color>
+    <color name="Dark_Grey">#222222</color>
+    <color name="Grey">#444444</color>
+    <color name="Other_grey">#A0A0A0</color>
+    <color name="Light_Grey">#BBBBBB</color>
+    <color name="Very_Light_Grey">#DDDDDD</color>
+
+    <color name="Light_Green">#00AAAA</color>
+
+
+</resources>

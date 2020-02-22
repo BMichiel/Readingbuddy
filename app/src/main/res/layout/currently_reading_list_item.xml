@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="?attr/backgroundcolor"
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="130dp"
+        android:id="@+id/currently_reading_books_image"
+        android:src="@drawable/book"
+        android:tint="?attr/colorAccent"
+        android:background="?attr/backgroundcolor"
+        android:elevation="6dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/currently_reading_books_image"
+        android:orientation="vertical"
+        android:id="@+id/layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Title"
+            android:textColor="?attr/TitleColor"
+            android:background="?attr/backgroundcolor"
+            android:id="@+id/currently_reading_books_title"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Author"
+            android:textColor="?attr/TextColor"
+            android:background="?attr/backgroundcolor"
+            android:id="@+id/currently_reading_books_author"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="00:00:00"
+            android:textColor="?attr/TextColor"
+            android:background="?attr/backgroundcolor"
+            android:id="@+id/currently_reading_books_time"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="0/0"
+            android:textColor="?attr/TextColor"
+            android:background="?attr/backgroundcolor"
+            android:id="@+id/currently_reading_books_pages"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="1 jan 1970"
+                android:textColor="?attr/TextColor"
+                android:background="?attr/backgroundcolor"
+                android:id="@+id/currently_reading_books_startdate"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="150dp"
+                android:text=" - "
+                android:textColor="?attr/TextColor"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/currently_reading_books_last_read_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="150dp"
+                android:text="2 jan 1970"
+                android:textColor="?attr/TextColor"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

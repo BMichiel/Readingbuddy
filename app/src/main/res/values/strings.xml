@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Reading buddy</string>
+    <string name="current_timers">Reading</string>
+    <string name="books">Books</string>
+    <string name="statistics">Statistics</string>
+    <string name="goal">Goals</string>
+
+    <string-array name="bookStates">
+        <item>To read</item>
+        <item>Currently reading</item>
+        <item>Finished</item>
+        <item>DNF</item>
+    </string-array>
+</resources>

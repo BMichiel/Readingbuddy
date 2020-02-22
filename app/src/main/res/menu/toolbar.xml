@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/themes"
+        android:title="Themes">
+        <menu>
+            <item android:title="Light">
+                <menu>
+                    <item
+                        android:id="@+id/lightTheme"
+                        android:title="Green theme"></item>
+                    <item
+                        android:id="@+id/lightBlue"
+                        android:title="Blue Theme"></item>
+                    <item
+                        android:id="@+id/lightPink"
+                        android:title="Pink theme"></item>
+                    <item
+                        android:id="@+id/lightRed"
+                        android:title="Red theme"></item>
+                    <item
+                        android:id="@+id/lightOrange"
+                        android:title="Orange theme"></item>
+                    <item
+                        android:id="@+id/lightPurple"
+                        android:title="Purple theme"></item>
+
+                </menu>
+            </item>
+
+            <item android:title="Dark">
+                <menu>
+                    <item
+                        android:id="@+id/darkTheme"
+                        android:title="Green theme"></item>
+                    <item
+                        android:id="@+id/darkBlue"
+                        android:title="Blue Theme"></item>
+                    <item
+                        android:id="@+id/darkPink"
+                        android:title="Pink theme"></item>
+                    <item
+                        android:id="@+id/darkRed"
+                        android:title="Red theme"></item>
+                    <item
+                        android:id="@+id/darkOrange"
+                        android:title="Orange theme"></item>
+                    <item
+                        android:id="@+id/darkPurple"
+                        android:title="Purple theme"></item>
+                </menu>
+            </item>
+        </menu>
+    </item>
+
+    <item android:title="Credits"
+        android:id="@+id/CreditsBtn"></item>
+</menu>
